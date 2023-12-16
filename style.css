@@ -1,0 +1,287 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --global-text-color-primary: #f5f5f7;
+  --global-navbar-color-primary: black;
+  --global-navbar-gray-alpha: rgba(94, 90, 90, 0.692);
+}
+
+body{
+  background-color: #191818;
+}
+
+a {
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.apple_logo {
+  display: flex;
+  justify-content: center;
+}
+
+.mobile_navbar_container {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  background-color: var(--global-navbar-color-primary);
+  height: 3rem;
+}
+
+.mobile_navbar_list {
+  padding: 0 2rem;
+  max-width: 62rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+}
+
+.mobile_navbar_list a {
+  text-decoration: none;
+  color: var(--global-text-color-primary);
+  opacity: 0.78;
+  transition: 100ms ease-in-out opacity;
+}
+
+.menu_button {
+  cursor: pointer;
+}
+
+.mobile_navbar_list a:hover {
+  opacity: 1;
+}
+
+/* The info box below the Navbar */
+.infobartext {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.infobar {
+  background-color: white;
+  height: 100%;
+  padding: 10px;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(52, 133, 226);
+}
+
+/* Main page - 1 -> iPhone 15 Pro */
+.mainpage1 {
+  background-image: url('Assets/iphone/mp1.jpg');
+  height: 560px;
+  background-position: center -35px;
+  background-position-x: center;
+  overflow: hidden;
+}
+
+.mp1-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.mp1-title1 {
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.mp1-title2 {
+  font-size: 25px;
+}
+
+.mainpagelink {
+  font-size: 20px;
+}
+/* Main page - 1 -end-> iPhone 15 Pro */
+
+
+/* Main page - 2 -> iPhone 14 Pro */
+.mainpage2 {
+  background-image: url('Assets/iphone/india.jpg');
+  height: 560px;
+  background-position: center -35px;
+  background-position-x: center;
+  overflow: hidden;
+}
+
+.mp2-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(16, 15, 15);
+}
+
+.mp1-title1 {
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.mp1-title2 {
+  font-size: 25px;
+}
+
+.mainpagelink {
+  font-size: 20px;
+}
+/* Main page - 2 -end-> iPhone 14 Pro */
+/* outer-container videoo container */
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 640px;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.text{
+  position: absolute;
+  color: #fff;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1{
+font-size: 80px;
+letter-spacing: 0.2px;
+}
+
+p{
+font-size: 28px;
+font-weight: 400;
+margin-bottom: 10px;
+}
+/* outer-container videoo container enduuu*/
+
+/* Main page - 3 -> watch */
+.mainpage3 {
+  background-image: url('Assets/watch/4-1.jpg');
+  height: 560px;
+  background-position: center -35px;
+  background-position-x: center;
+  overflow: hidden;
+  background-color: white;
+}
+
+.mp3-text {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(42, 41, 41);
+}
+
+/* Main page - 3 -> watch  end*/
+/*accerasries*/
+.section1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  margin-top: 0px;
+  background-color: #EEF0E5;
+}
+
+.titles h1 {
+  font-size: 40px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  background-color: #EEF0E5;
+}
+
+.product img {
+  height: 90px;
+}
+
+.product a {
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.services img {
+  height: 30px;
+  border-radius: 50%;
+  width: 30px;
+}
+
+.services a {
+  color: blue;
+}
+
+/*footer*/
+.menu-items{
+  margin-top: 0px;
+  background-color: #EEF0E5;
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.store{
+  margin-left: 5rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.menu-list{
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu-list ul{
+  list-style: none;
+}
+.footer p{
+  text-align: center;
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+.footer{
+  padding: 20px;
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.cross{
+  display: none;
+}
+.menuopen{
+  display: none;
+}

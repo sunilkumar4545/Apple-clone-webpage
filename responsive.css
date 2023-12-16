@@ -1,0 +1,158 @@
+@media (max-width: 1024px) {
+    /* Main page - 1 -> iPhone 14 Pro */
+
+    .mainpage1 {
+        background-image: url("https://www.apple.com/in/home/images/heroes/iphone-14-pro/hero_iphone14pro_spring__9xo85pm6sbmm_small.jpg");
+        height: 515px;
+    }
+
+    .mp1-title1 {
+        font-size: 32px;
+    }
+
+    .mp1-title2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .mainpagelink {
+        font-size: 16px;
+    }
+
+    .mainpage2 {
+        background-image: url("https://www.apple.com/in/home/heroes/iphone-14/images/hero_iphone14_yellow__eun20sn4imi6_small.jpg");
+        height: 550px;
+    }
+
+}
+
+
+@media only screen and (max-width:600px) {
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .titles h1 {
+        font-size: 30px;
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-list ul {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .navbar_container {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .mobile_navbar_container {
+        display: none;
+    }
+
+    .apple_logo:hover {
+        opacity: 0.89;
+    }
+
+    .navbar_container {
+        width: 100%;
+        position: fixed;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        background-color: var(--global-navbar-color-primary);
+        height: 3rem;
+        font-size: 0.8rem;
+    }
+
+    .nav_list {
+        padding: 0 2rem;
+        max-width: 62rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        list-style: none;
+    }
+
+    .nav_list a {
+        text-decoration: none;
+        color: var(--global-text-color-primary);
+        opacity: 0.78;
+        transition: 100ms ease-in-out opacity;
+    }
+
+    .nav_list a:hover {
+        opacity: 1;
+    }
+}
+
+.mobile_nav_items:first-child {
+    height: 20px;
+    width: 20px;
+}
+
+.menu_button {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu_button div {
+    opacity: 0.78;
+    height: 1px;
+    width: 18px;
+    background-color: white;
+    transition: 200ms ease-in-out all;
+}
+
+.expansionMenu {
+    background-color: var(--global-navbar-color-primary);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3.5%;
+    width: 100%;
+    height: 0%;
+    transition: 400ms ease-in-out height;
+}
+
+
+.mobile_item_menu {
+    display: flex;
+    z-index: 3;
+    flex-direction: column;
+    padding: 0 2rem;
+    gap: 1.2rem;
+    overflow-y: auto;
+    position: absolute;
+    top: 36px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.mobile_item_menu li {
+    border-bottom: 1px solid var(--global-navbar-gray-alpha);
+}
+
+.mobile_item_menu li a {
+    text-decoration: none;
+    color: var(--global-text-color-primary);
+    font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.1rem;
+}
